@@ -99,7 +99,7 @@ class MaterialController extends Controller
      */
     public function edit(Material $material)
     {
-        $teacher = Teacher::pluck('name', 'id');
+        $teacher = Teacher::pluck('teacher_name', 'id');
         return view('materials.edit',compact('material', 'teacher'));
     }
 
