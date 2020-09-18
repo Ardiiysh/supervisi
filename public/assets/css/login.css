@@ -3,6 +3,8 @@
 
 body{
   background-color: #004c40;
+  background-image: url(https://images.wallpaperscraft.com/image/mountains_peaks_trees_185736_1920x1080.jpg);
+  background-repeat: no-repeat;
 }
 #login-container{
   width: 450px;

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('assets/css/image/1.jpg') !!}">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +14,12 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-image: url(https://images.wallpaperscraft.com/image/mountains_peaks_trees_185736_1920x1080.jpg);
+                background-repeat: no-repeat;
+                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
+                width: 100%;
                 height: 100vh;
                 margin: 0;
             }
@@ -70,7 +74,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}" style="color: white">Login</a>
 
                         @if (Route::has('register'))
                             {{-- <a href="{{ route('register') }}">Register</a> --}}
