@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Material;
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $materials = Material::all();
+        $a = $materials->count();
+
+        if(Auth::user()->id_level == 3){
+            return view('kepsek.index', compact('materials', 'a'));
+        }
         return view('home');
      }
     }

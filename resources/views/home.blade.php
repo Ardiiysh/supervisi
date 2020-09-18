@@ -63,7 +63,7 @@
       @elseif (Auth::user()->id_level == 3)
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="kepsek">Materi</a>
+          <a class="nav-link" href="/home">Laporan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('logout') }}"
