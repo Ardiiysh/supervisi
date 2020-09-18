@@ -25,3 +25,8 @@ Route::resource('material', 'MaterialController');
 Route::get('file','FileController@create');
 Route::post('file','FileController@store');
 Route::resource('teacher','TeacherController');
+
+
+Route::get('kepsek', function () {
+    return view('kepala.index');
+});

@@ -37,7 +37,7 @@
             <td>
                 <form action="{{ route('schedule.destroy',$schedule->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('schedule.show',$schedule->id) }}">Show</a>
+                    {{-- <a class="btn btn-info" href="{{ route('schedule.show',$schedule->id) }}">Show</a> --}}
     
                     <a class="btn btn-primary" href="{{ route('schedule.edit',$schedule->id) }}">Edit</a>
    

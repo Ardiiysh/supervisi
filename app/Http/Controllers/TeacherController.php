@@ -84,7 +84,9 @@ class TeacherController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'lesson' => 'required',
+            'nohp' => 'required',
+            'email' => 'required',
         ]);
   
         $teacher->update($request->all());

@@ -37,7 +37,7 @@
             <td>
                 <form action="{{ route('teacher.destroy',$teacher->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('teacher.show',$teacher->id) }}">Show</a>
+                    {{-- <a class="btn btn-info" href="{{ route('teacher.show',$teacher->id) }}">Show</a> --}}
     
                     <a class="btn btn-primary" href="{{ route('teacher.edit',$teacher->id) }}">Edit</a>
    

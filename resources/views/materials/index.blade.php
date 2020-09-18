@@ -47,7 +47,7 @@
    
                     {{-- <a class="btn btn-info" href="{{ route('material.show',$material->id) }}">Show</a> --}}
     
-                    {{-- <a class="btn btn-info" href="{{ route('material.show',$material->id) }}">Download</a> --}}
+                    <a class="btn btn-info" href="{{ route('material.show',$material->id) }}">Download</a>
                     <a class="btn btn-primary" href="{{ route('material.edit',$material->id) }}">Edit</a>
    
                     @csrf

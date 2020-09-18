@@ -23,7 +23,7 @@
           <a class="nav-link" href="material">Materi</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="file">Upload File</a>
+            {{-- <a class="nav-link" href="file">Upload File</a> --}}
           </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('logout') }}"
@@ -40,13 +40,13 @@
     @elseif (Auth::user()->id_level == 2)
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="lesson">Mata Pelajaran</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="teacher">Guru</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="schedules">Jadwal</a>
+          <a class="nav-link" href="schedule">Jadwal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="materi">Materi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('logout') }}"
@@ -63,7 +63,7 @@
       @elseif (Auth::user()->id_level == 3)
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="material">Materi</a>
+          <a class="nav-link" href="kepsek">Materi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('logout') }}"
