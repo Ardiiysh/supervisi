@@ -22,16 +22,14 @@
         <tr>
             <th>No</th>
             <th>Activity</th>
-            <th>Status</th>
-            <th>Supervisor Name</th>
-            <th>Teacher Name</th>
+            <th>Supervisor </th>
+            <th>Guru</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($schedules as $schedule)
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $schedule->activity }}</td>
-            <td>{{ $schedule->status }}</td>
             <td>{{ $schedule->supervisor_name }}</td>
             <td>{{ $schedule->teacher_name }}</td>
             <td>

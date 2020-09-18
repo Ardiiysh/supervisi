@@ -25,8 +25,10 @@ Route::resource('material', 'MaterialController');
 Route::get('file','FileController@create');
 Route::post('file','FileController@store');
 Route::resource('teacher','TeacherController');
-
-
+Route::get('/', function () {
+    return view('index');
+});
+Route::get('/pdf', 'PdfController@pdf')->name('print');
 // Route::get('kepsek', function () {
 //     return view('kepsek.index');
 // });

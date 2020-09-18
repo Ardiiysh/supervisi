@@ -42,7 +42,19 @@
             <td>{{ $material->status }}</td>
             <td>{{ $material->comment }}</td>
             <td>{{ $material->tanggal_upload }}</td>
+            <td>
+            <form action="{{ route('material.destroy',$material->id) }}" method="POST">
+   
+    
+                <a class="btn btn-info" href="{{ route('print')}}">pRINT</a>
+    
+                @csrf
+                @method('DELETE')
+    
+            </form>
+        </td>
         </tr>
+       
         @endforeach
     </table>
       

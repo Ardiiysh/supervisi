@@ -40,7 +40,6 @@ class ScheduleController extends Controller
     {
         $request->validate([
             'activity' => 'required',
-            'status' => 'required',
             'supervisor_name' => 'required',
             'teacher_name' => 'required',
         ]);
@@ -84,7 +83,6 @@ class ScheduleController extends Controller
     {
         $request->validate([
             'activity' => 'required',
-            'status' => 'required',
             'supervisor_name' => 'required',
             'teacher_name' => 'required',
         ]);

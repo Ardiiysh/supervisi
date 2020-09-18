@@ -30,24 +30,18 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Activity:</strong>
-                <input type="text" name="activity" class="form-control" placeholder="Activity">
+                <input type="date" name="activity" class="form-control" placeholder="Activity">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Status:</strong>
-                <input type="text" name="status" class="form-control" placeholder="Status">
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Supervisor Name:</strong>
+                <strong>Supervisor :</strong>
                 <input type="text" name="supervisor_name" class="form-control" placeholder="Supervisor Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Teacher Name:</strong>
+                <strong>Guru:</strong>
                 <input type="text" name="teacher_name" class="form-control" placeholder="Teacher Name">
             </div>
         </div>
