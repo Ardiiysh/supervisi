@@ -87,6 +87,9 @@
                 <div class="title m-b-md">
                     S U P E R V I S I
                 </div>
+                <div class="title m-b-md">
+                    DIGITAL
+                </div>
 
                 <div class="links">
                     {{-- <a href="https://laravel.com/docs">Docs</a>

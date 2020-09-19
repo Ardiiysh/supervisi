@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Materi</h2>
+                <h2>Laporan</h2>
             </div>
         </div>
     </div>
@@ -42,17 +42,14 @@
             <td>{{ $material->status }}</td>
             <td>{{ $material->comment }}</td>
             <td>{{ $material->tanggal_upload }}</td>
-            <td>
             <form action="{{ route('material.destroy',$material->id) }}" method="POST">
    
     
-                <a class="btn btn-info" href="{{ route('print')}}">pRINT</a>
     
                 @csrf
                 @method('DELETE')
     
             </form>
-        </td>
         </tr>
        
         @endforeach
