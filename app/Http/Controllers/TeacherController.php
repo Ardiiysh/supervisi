@@ -83,7 +83,7 @@ class TeacherController extends Controller
     public function update(Request $request, Teacher $teacher)
     {
         $request->validate([
-            'name' => 'required',
+            'teacher_name' => 'required',
             'lesson' => 'required',
             'nohp' => 'required',
             'email' => 'required',
