@@ -74,7 +74,11 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Status:</strong>
-                    <input type="text" name="status" value="{{ $material->status }}" class="form-control" placeholder="Sstatus">
+                <select type="text" name="status" class="form-control" placeholder="Status">
+                    <option >-- Pilih Status --</option>
+                    <option value="Ditolak ">Ditolak</option>
+                    <option value="Diterima">Diterima</option>
+                </select>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

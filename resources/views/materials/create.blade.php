@@ -69,8 +69,8 @@
                 <strong>Status:</strong>
                 <select type="text" name="status" class="form-control" placeholder="Status">
                     <option >-- Pilih Status --</option>
-                    <option value="NotApproved">Ditolak</option>
-                    <option value="Approved">Diterima</option>
+                    <option value="Ditolak ">Ditolak</option>
+                    <option value="Diterima">Diterima</option>
                 </select>
             </div>
         </div>
